@@ -1,10 +1,9 @@
-<div class="weui-cell">
-<a ng-repeat="item in bookType" class="weui-cell weui-cell_access" href="javascript:;">
-                <div class="weui-cell__hd"></div>
-                <div class="weui-cell__bd">
-                    <p>{{item.name}}</p>
-                </div>
-                <div class="weui-cell__ft">一丝怯s</div>
-            </a>
+<div class="weui_cells weui_cells_access">
+  <a ng-repeat="item in bookType" class="weui_cell" href="javascript:;" ng-href="#/book_list/{{item.id}}">
+    <div class="weui_cell_bd weui_cell_primary">
+      <p>{{item.name}}</p>
+    </div>
+    <div class="weui_cell_ft">说明文字</div>
+  </a>
 
 </div>
